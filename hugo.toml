@@ -1,4 +1,25 @@
+defaultContentLanguage = "hu"
+defaultContentLanguageInSubdir = false
+disableLanguages = ["en"]
+
 baseURL = "http://localhost/"
 languageCode = "hu-hu"
 title = "Pilis környéki szolgáltatások"
 theme = "hero"
+
+[menu]
+
+  [[menu.main]]
+    name = "Főoldal"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    name = "Szolgáltatások"
+    url = "/szolgaltatasok/"
+    weight = 2
+
+  [[menu.main]]
+    name = "Kapcsolat"
+    url = "/contact/"
+    weight = 3
