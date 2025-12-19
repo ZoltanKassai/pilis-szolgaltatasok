@@ -1,0 +1,10 @@
+<title>
+    {{ if .Title }}{{ .Title }} - {{ site.Title }}{{ else }}{{ site.Title }}{{ end }}
+    </title>
+    
+    {{ if .Params.description }}
+    <meta name="description" content="{{ .Params.description }}">
+    {{ else if .Summary }}
+    <meta name="description" content="{{ .Summary | plainify | truncate 155 }}">
+    {{ end }}
+    
