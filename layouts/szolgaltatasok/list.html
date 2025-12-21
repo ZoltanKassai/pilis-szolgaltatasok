@@ -1,13 +1,9 @@
-{{ define "header_css" }}{{ end }}
-{{ define "body_classes" }}{{ end }}
-{{ define "header_classes" }}{{ end }}
-
 {{ define "main" }}
 
-<!-- BEVEZETŐ / LANDING -->
+<!-- BEVEZETŐ -->
 <div class="container pt-10 pb-6">
   <div class="row">
-    <div class="col-12">
+    <div class="col-12 text-center">
       <h1 class="title-1 black">{{ .Title }}</h1>
       {{ .Content }}
     </div>
@@ -18,19 +14,9 @@
 <div class="container pb-6">
   <div class="row">
     {{ range .RegularPages }}
-    <div class="col-12 col-md-6 mb-4">
-      <div class="card p-4">
-        <h2 class="h4 mb-2">
-          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-        </h2>
-        {{ with .Params.summary }}
-          <p class="mb-3">{{ . }}</p>
-        {{ end }}
-        <a href="{{ .RelPermalink }}" class="btn btn-primary">
-          {{ with .Params.cta }}{{ . }}{{ else }}Részletek{{ end }}
-        </a>
+      <div class="col-12 col-md-6 mb-4 d-flex">
+        {{ partial "service-card.html" . }}
       </div>
-    </div>
     {{ end }}
   </div>
 </div>

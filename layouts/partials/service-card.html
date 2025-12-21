@@ -1,18 +1,21 @@
-<div class="service-card">
-    <div class="service-card__icon">
-      <span class="icon icon-{{ .Params.icon }}"></span>
-    </div>
-  
-    <h2 class="service-card__title">
-      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-    </h2>
-  
-    {{ with .Params.summary }}
-      <p class="service-card__summary">{{ . }}</p>
-    {{ end }}
-  
-    <a class="service-card__cta" href="{{ .RelPermalink }}">
-      {{ .Params.cta | default "Részletek" }} →
-    </a>
+<div class="card p-4 h-100 service-card">
+  {{ with .Params.icon }}
+  <div class="service-icon mb-3">
+    <div class="service-icon mb-3">
+      {{ partial "icon.html" . }}
+    </div>    
   </div>
-  
+  {{ end }}
+
+  <h2 class="h4 mb-2">
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+  </h2>
+
+  {{ with .Params.description }}
+    <p class="mb-3">{{ . }}</p>
+  {{ end }}
+
+  <a href="{{ .RelPermalink }}" class="btn btn-primary mt-auto">
+    {{ .Params.cta | default "Részletek" }}
+  </a>
+</div>
