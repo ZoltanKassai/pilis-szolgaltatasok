@@ -1,5 +1,6 @@
 ---
 title: "Szolgáltatások Piliscsabán és környékén"
+description: "Kültéri és beltéri munkák Piliscsabán és a környező településeken."
 ---
 
 ## Kültéri és beltéri munkák

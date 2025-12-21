@@ -14,16 +14,22 @@
   </div>
 </div>
 
-<!-- SZOLGÁLTATÁS OLDALAK -->
+<!-- SZOLGÁLTATÁS KÁRTYÁK -->
 <div class="container pb-6">
   <div class="row">
     {{ range .RegularPages }}
-    <div class="col-12 mb-6">
-      <hr>
-      <h2>
-        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-      </h2>
-      {{ .Content }}
+    <div class="col-12 col-md-6 mb-4">
+      <div class="card p-4">
+        <h2 class="h4 mb-2">
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </h2>
+        {{ with .Params.summary }}
+          <p class="mb-3">{{ . }}</p>
+        {{ end }}
+        <a href="{{ .RelPermalink }}" class="btn btn-primary">
+          {{ with .Params.cta }}{{ . }}{{ else }}Részletek{{ end }}
+        </a>
+      </div>
     </div>
     {{ end }}
   </div>

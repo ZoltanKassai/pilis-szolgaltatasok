@@ -1,6 +1,9 @@
 ---
 title: "Szalagparketta lerakás Piliscsabán és környékén"
 description: "Precíz szalagparketta lerakás Piliscsabán, Dorogon és Esztergomban."
+icon: "floor"
+cta: "Részletek"
+summary: "Precíz szalagparketta lerakás Piliscsabán és környékén."
 ---
 
 Precíz és megbízható **szalagparketta lerakást** vállalunk  
@@ -20,7 +23,3 @@ Piliscsabán, Dorogon, Esztergomban és a környező településeken.
 - korrekt árak  
 
 📞 **Kapcsolatfelvételért hívjon bizalommal!**
-
-icon: "floor"
-cta: "Részletek"
-summary: "Precíz szalagparketta lerakás Piliscsabán és környékén."
