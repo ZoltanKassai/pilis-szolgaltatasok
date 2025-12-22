@@ -1,0 +1,20 @@
+{{- $site := .Site -}}
+{{- $page := . -}}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "{{ $page.Title }}",
+  "url": "{{ $page.Permalink }}",
+  "description": "{{ with $page.Params.summary }}{{ . }}{{ else }}{{ $page.Summary | plainify }}{{ end }}",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "{{ $site.Title }}",
+    "areaServed": {
+      "@type": "AdministrativeArea",
+      "name": "Piliscsaba és környéke"
+    }
+  }
+}
+</script>

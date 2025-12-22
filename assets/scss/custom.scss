@@ -12,3 +12,12 @@
     box-shadow: 0 10px 30px rgba(0,0,0,0.08);
   }
   
+  .wrapper {
+    padding-top: 120px;
+  }
+  
+  @media (max-width: 768px) {
+    .wrapper {
+      padding-top: 80px;
+    }
+  }

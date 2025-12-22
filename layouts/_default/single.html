@@ -1,0 +1,32 @@
+{{ define "header_css" }}
+  {{ if eq .Section "szolgaltatasok" }}
+    {{ partial "service-jsonld.html" . }}
+  {{ end }}
+{{ end }}
+
+{{ define "body_classes" }}{{ end }}
+{{ define "header_classes" }}{{ end }}
+
+{{ define "main" }}
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-9">
+      <h1>{{ .Title }}</h1>
+
+      {{ if .Date }}
+        <p class="meta">
+          {{ dateFormat "2006.01.02" .Date }}
+        </p>
+      {{ end }}
+
+      {{ if .Params.author }}
+        <p class="meta">Szerző: {{ .Params.author }}</p>
+      {{ end }}
+
+      <div class="content">
+        {{ .Content }}
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}
