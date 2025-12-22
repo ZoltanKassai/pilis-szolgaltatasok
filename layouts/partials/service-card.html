@@ -1,21 +1,25 @@
-<div class="card p-4 h-100 service-card">
-  {{ with .Params.icon }}
-  <div class="service-icon mb-3">
-    <div class="service-icon mb-3">
-      {{ partial "icon.html" . }}
-    </div>    
+<div class="col-12 col-md-6 mb-4">
+  <div class="card p-4 h-100 service-card">
+
+    {{ with .Params.icon }}
+      <div class="service-icon mb-3">
+        <i class="fa-solid {{ . }}"></i>
+      </div>
+    {{ end }}
+
+    <h2 class="h4 mb-2">
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    </h2>
+
+    {{ with .Params.summary }}
+      <p class="mb-3">{{ . }}</p>
+    {{ else }}
+      <p class="mb-3">{{ .Summary }}</p>
+    {{ end }}
+
+    <a href="{{ .RelPermalink }}" class="btn btn-primary mt-auto">
+      {{ with .Params.cta }}{{ . }}{{ else }}Részletek{{ end }}
+    </a>
+
   </div>
-  {{ end }}
-
-  <h2 class="h4 mb-2">
-    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-  </h2>
-
-  {{ with .Params.description }}
-    <p class="mb-3">{{ . }}</p>
-  {{ end }}
-
-  <a href="{{ .RelPermalink }}" class="btn btn-primary mt-auto">
-    {{ .Params.cta | default "Részletek" }}
-  </a>
 </div>

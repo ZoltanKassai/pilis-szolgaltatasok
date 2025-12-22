@@ -1,8 +1,8 @@
 ---
 title: "Szalagparketta lerakás Piliscsabán és környékén"
-description: "Precíz szalagparketta lerakás Piliscsabán és környékén."
-icon: "floor"
-cta: "Részletek"
+summary: "Precíz szalagparketta lerakás Piliscsabán és környékén."
+icon: fa-layer-group
+cta: Részletek
 ---
 
 Precíz és megbízható **szalagparketta lerakást** vállalunk…
