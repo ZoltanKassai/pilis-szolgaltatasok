@@ -1,23 +1,35 @@
-<div class="card p-4 h-100 service-card d-flex flex-column">
+<article
+  class="card p-4 h-100 service-card d-flex flex-column {{ if .Params.featured }}featured{{ end }}"
+  itemscope
+  itemtype="https://schema.org/Service"
+>
 
   {{ with .Params.icon }}
-    <div class="service-icon mb-3">
+    <div class="service-icon" itemprop="icon">
       <i class="fa-solid {{ . }}"></i>
     </div>
   {{ end }}
 
-  <h2 class="h4 mb-2">
-    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+  <h2 class="h4 mb-2" itemprop="name">
+    <a href="{{ .RelPermalink }}" itemprop="url">
+      {{ .Title }}
+    </a>
   </h2>
 
   {{ with .Params.summary }}
-    <p class="mb-3">{{ . }}</p>
+    <p class="mb-3" itemprop="description">{{ . }}</p>
   {{ else }}
-    <p class="mb-3">{{ .Summary }}</p>
+    <p class="mb-3" itemprop="description">{{ .Summary }}</p>
   {{ end }}
 
-  <a href="{{ .RelPermalink }}" class="btn btn-primary mt-auto">
+  <a
+    href="{{ .RelPermalink }}"
+    class="btn btn-primary"
+    itemprop="offers"
+    itemscope
+    itemtype="https://schema.org/Offer"
+  >
     {{ with .Params.cta }}{{ . }}{{ else }}Részletek{{ end }}
   </a>
 
-</div>
+</article>
