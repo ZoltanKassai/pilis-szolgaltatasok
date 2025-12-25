@@ -1,89 +1,88 @@
 .service-card {
-    border: 1px solid #e5e7eb;
-    border-radius: 16px;
-    background: #ffffff;
-    transition: all 0.25s ease;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .service-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
-    border-color: #1d4ed8;
-  }
-  
-  .service-icon {
-    width: 56px;
-    height: 56px;
-    border-radius: 14px;
-    background: rgba(29, 78, 216, 0.08);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 28px;
-    color: #1d4ed8;
-    margin-bottom: 20px;
-  }
-  
-  .service-card h2 a {
-    color: #111827;
-    text-decoration: none;
-  }
-  
-  .service-card h2 a:hover {
-    color: #1d4ed8;
-  }
-  
-  .service-card p {
-    color: #4b5563;
-    line-height: 1.6;
-  }
-  
-  .service-card .btn {
-    transition: all 0.2s ease;
-  }
-  
-  .service-card:hover .btn {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(29, 78, 216, 0.25);
-  }
-  
-  .service-card .btn:hover {
-    background-color: #1e40af;
-  }  
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  background: #ffffff;
+  padding: 32px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
 
+/* Hover – elegáns lebegés */
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  border-color: #1d4ed8;
+}
+
+/* Ikon blokk */
+.service-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  background: rgba(29, 78, 216, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  color: #1d4ed8;
+  margin-bottom: 24px;
+}
+
+/* Cím */
+.service-card h2 {
+  margin-bottom: 12px;
+}
+
+.service-card h2 a {
+  color: #111827;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.service-card h2 a:hover {
+  color: #1d4ed8;
+}
+
+/* Leírás */
+.service-card p {
+  color: #4b5563;
+  line-height: 1.65;
+  margin-bottom: 28px;
+}
+
+/* CTA gomb */
+.service-card .btn {
+  margin-top: auto;
+  padding: 12px 18px;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.service-card:hover .btn {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(29, 78, 216, 0.25);
+}
+
+/* Featured kártya */
+.service-card.featured {
+  border-width: 2px;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+}
+
+/* Featured szalag */
 .service-card.featured::before {
-    content: "Ajánlott";
-    position: absolute;
-    top: 16px;
-    right: -40px;
-    background: #1d4ed8;
-    color: #fff;
-    padding: 6px 48px;
-    transform: rotate(45deg);
-    font-size: 12px;
-    font-weight: 600;
-  }
-
-  .service-card.featured {
-    border-width: 2px;
-    background: linear-gradient(
-      180deg,
-      #ffffff 0%,
-      #f8fafc 100%
-    );
-  }
-
-  .services-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 32px;
-  }
-  
-  @media (max-width: 768px) {
-    .services-grid {
-      grid-template-columns: 1fr;
-    }
-  }
-  
+  content: "Ajánlott";
+  position: absolute;
+  top: 18px;
+  right: -46px;
+  background: #1d4ed8;
+  color: #ffffff;
+  padding: 6px 56px;
+  transform: rotate(45deg);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}

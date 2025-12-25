@@ -1,0 +1,24 @@
+{{ $matches := findRE "(?s)<h3[^>]*>([^<]+)</h3>\\s*<p>(.*?)</p>" .Content }}
+
+{{ if gt (len $matches) 0 }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {{ range $i, $m := $matches }}
+    {{ $q := replaceRE "(?s)<h3[^>]*>([^<]+)</h3>\\s*<p>(.*?)</p>" "$1" $m | plainify }}
+    {{ $a := replaceRE "(?s)<h3[^>]*>([^<]+)</h3>\\s*<p>(.*?)</p>" "$2" $m | plainify }}
+    {
+      "@type": "Question",
+      "name": "{{ $q }}",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "{{ $a }}"
+      }
+    }{{ if ne (add $i 1) (len $matches) }},{{ end }}
+    {{ end }}
+  ]
+}
+</script>
+{{ end }}
