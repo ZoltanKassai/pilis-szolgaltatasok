@@ -1,29 +1,19 @@
 {{ define "main" }}
 
 <section class="hero hero-services">
-  <div class="container text-center">
+  <div class="container hero-inner text-center">
+
     <h1 class="hero-title">
-      {{ .Title }}
+      Szolgáltatások Piliscsabán és környékén
     </h1>
 
     <p class="hero-subtitle">
-      Kültéri és beltéri munkák – megbízható kivitelezés Piliscsabán és környékén
+      Kültéri és beltéri munkák – megbízható kivitelezés, korrekt árakon
     </p>
 
-    <a href="/contact/" class="btn btn-hero">
+    <a href="/contact/" class="btn btn-primary btn-hero">
       Ajánlatot kérek
     </a>
+
   </div>
 </section>
-
-<div class="container pb-6">
-  <div class="row">
-    {{ range .RegularPages }}
-      <div class="col-12 col-md-6 mb-4 d-flex">
-        {{ partial "service-card.html" . }}
-      </div>
-    {{ end }}
-  </div>
-</div>
-
-{{ end }}
