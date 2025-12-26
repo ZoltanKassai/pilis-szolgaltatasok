@@ -1,0 +1,12 @@
+.btn-primary {
+    background: var(--color-accent);
+    border: none;
+    color: #1f2937;
+  }
+  
+  .btn-primary:hover,
+  .btn-primary:focus {
+    background: var(--color-accent-hover);
+    color: #1f2937;
+  }
+  

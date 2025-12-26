@@ -1,0 +1,50 @@
+:root {
+    /* Alapszínek – prémium természetes */
+    --color-primary: #7a9c6c;     /* pasztell zöld */
+    --color-accent: #f5d15f;      /* napsárga */
+    --color-accent-hover: #e6be3c;
+  
+    /* Szöveg */
+    --color-text-main: #1f2937;
+    --color-text-muted: #6b7280;
+  
+    /* Felületek */
+    --color-bg-main: #ffffff;
+    --color-bg-soft: #f7f9f5;
+  
+    /* Keretek */
+    --color-border: #d1d5db;
+    --color-border-strong: #7a9c6c;
+  }
+
+  .btn-primary {
+    background: var(--color-accent) !important;
+    color: #1f2937 !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+  
+  .btn-primary:hover {
+    background: var(--color-accent-hover) !important;
+  }
+  
+  .btn-primary:focus,
+  .btn-primary:focus-visible {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+
+  /* ===== BOOTSTRAP BTN PRIMARY KILL ===== */
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:focus-visible,
+.btn-primary:active {
+  background: var(--color-accent) !important;
+  color: #1f2937 !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+} 
+  

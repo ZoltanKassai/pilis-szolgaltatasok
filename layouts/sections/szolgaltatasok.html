@@ -1,26 +1,25 @@
 {{ define "main" }}
 
-<!-- FEJLÉC / LANDING -->
-<div class="container pt-10 pb-6">
-  <div class="row">
-    <div class="col-12">
-      <h1 class="title-1 black">{{ .Title }}</h1>
-      {{ .Content }}
-    </div>
-  </div>
-</div>
+<section class="hero hero-services">
+  <div class="container text-center">
+    <h1>{{ .Title }}</h1>
 
-<!-- SZOLGÁLTATÁS OLDALAK EGYSOROSAN -->
+    {{ with .Params.subtitle }}
+      <p class="hero-subtitle">{{ . }}</p>
+    {{ end }}
+
+    <a href="/contact/" class="btn btn-hero">
+      Ajánlatot kérek
+    </a>
+  </div>
+</section>
+
 <div class="container pb-6">
   <div class="row">
     {{ range .RegularPages }}
-    <div class="col-12 mb-6">
-      <hr>
-      <h2>
-        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-      </h2>
-      {{ .Content }}
-    </div>
+      <div class="col-12 col-md-6 mb-4 d-flex">
+        {{ partial "service-card.html" . }}
+      </div>
     {{ end }}
   </div>
 </div>

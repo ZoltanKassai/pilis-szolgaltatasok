@@ -1,0 +1,25 @@
+.hero-services {
+  padding: 140px 0 100px;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.95), rgba(255,255,255,.98)),
+    url("/images/texture-light.png");
+  background-size: cover;
+}
+
+.hero-services h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: var(--color-text-muted);
+  margin-bottom: 32px;
+}
+
+.btn-hero {
+  background: var(--color-accent);
+  padding: 14px 32px;
+  border-radius: 999px;
+  font-weight: 600;
+}
