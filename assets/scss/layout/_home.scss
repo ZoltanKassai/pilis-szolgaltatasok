@@ -49,4 +49,53 @@
       grid-template-columns: 1fr;
     }
   }
+
+  /* ===== CTA SÁV ===== */
+
+.cta {
+    padding: 80px 0;
+    background: linear-gradient(
+      135deg,
+      var(--color-accent),
+      var(--color-accent-hover)
+    );
+    color: #1f2937;
+    text-align: center;
+  
+    .cta-inner {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+  
+    h2 {
+      font-size: clamp(1.8rem, 3vw, 2.4rem);
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+  
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 32px;
+      opacity: 0.9;
+    }
+  
+    .btn-cta {
+      display: inline-block;
+      padding: 16px 32px;
+      font-size: 1.05rem;
+      font-weight: 600;
+      border-radius: 14px;
+  
+      background: #fff;
+      color: #1f2937;
+  
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+  
+    .btn-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.25);
+    }
+  }
   
