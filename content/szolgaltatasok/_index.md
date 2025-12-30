@@ -1,8 +1,6 @@
 ---
 title: "Szolgáltatások Piliscsabán és környékén"
-description: "Kültéri és beltéri munkák Piliscsabán és a környező településeken."
+description: "Kültéri és beltéri munkák Piliscsabán és a környező településeken – korrekt árakon, megbízható kivitelezéssel."
 ---
 
-## Kültéri és beltéri munkák
-
-Az alábbi szolgáltatásokat vállaljuk Piliscsaba és a környező települések területén.
+Kültéri és beltéri szolgáltatásokat vállalok Piliscsabán és a környező településeken.

@@ -1,50 +1,35 @@
 :root {
-    /* Alapszínek – prémium természetes */
-    --color-primary: #7a9c6c;     /* pasztell zöld */
-    --color-accent: #f5d15f;      /* napsárga */
-    --color-accent-hover: #e6be3c;
-  
-    /* Szöveg */
-    --color-text-main: #1f2937;
-    --color-text-muted: #6b7280;
-  
-    /* Felületek */
-    --color-bg-main: #ffffff;
-    --color-bg-soft: #f7f9f5;
-  
-    /* Keretek */
-    --color-border: #d1d5db;
-    --color-border-strong: #7a9c6c;
-  }
+  --color-primary: #6f8f5f; // EZ AZ EGYETLEN ZÖLD, BAZMEG
+  --color-primary-dark: #5e7c50;
 
-  .btn-primary {
-    background: var(--color-accent) !important;
-    color: #1f2937 !important;
-    border: none !important;
-    box-shadow: none !important;
-  }
-  
-  .btn-primary:hover {
-    background: var(--color-accent-hover) !important;
-  }
-  
-  .btn-primary:focus,
-  .btn-primary:focus-visible {
-    outline: none !important;
-    box-shadow: none !important;
-  }
+  --color-accent: #f5d76e;
+  --color-accent-hover: #e6be3c;
 
-  /* ===== BOOTSTRAP BTN PRIMARY KILL ===== */
+  --color-text-main: #1f2937;
+  --color-text-muted: #6b7280;
 
-.btn-primary,
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary:focus-visible,
-.btn-primary:active {
+  --color-bg-main: #ffffff;
+  --color-bg-soft: #f7f9f5;
+
+  --color-border: #d1d5db;
+}
+
+/* ===== BOOTSTRAP BTN PRIMARY OVERRIDE ===== */
+
+.btn-primary {
   background: var(--color-accent) !important;
   color: #1f2937 !important;
   border: none !important;
+  box-shadow: none !important;
+}
+
+.btn-primary:hover {
+  background: var(--color-accent-hover) !important;
+}
+
+.btn-primary:focus,
+.btn-primary:focus-visible,
+.btn-primary:active {
   outline: none !important;
   box-shadow: none !important;
-} 
-  
+}

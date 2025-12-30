@@ -1,11 +1,15 @@
 .hero {
   position: relative;
-  padding: 140px 0 120px;
+
+  // HEADER ABSOLUTE MIATT TÖBB HELY FELÜL
+  padding: 180px 0 110px;
+
   background: linear-gradient(
     135deg,
     rgba(122, 156, 108, 0.12),
     rgba(245, 209, 95, 0.10)
   );
+
   text-align: center;
 
   .hero-inner {
