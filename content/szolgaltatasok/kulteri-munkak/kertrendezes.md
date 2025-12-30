@@ -1,5 +1,7 @@
 ---
 icon: fa-tree
+featured: true
+weight: 10
 title: "Kertrendezés Piliscsabán"
 description: "Teljes körű kertrendezés Piliscsabán – kerti utak, tipegők, támfalak, kerti építmények, tereprendezés, ültetés."
 ---

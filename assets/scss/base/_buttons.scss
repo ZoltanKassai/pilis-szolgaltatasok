@@ -9,4 +9,14 @@
     background: var(--color-accent-hover);
     color: #1f2937;
   }
+
+.btn-hero,
+.btn-cta {
+  text-decoration: none !important;
+}
+
+.btn-hero:hover,
+.btn-cta:hover {
+  text-decoration: none !important;
+}
   

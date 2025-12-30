@@ -1,32 +1,41 @@
 .service-card {
-  border: 1px solid var(--color-border);
-  border-radius: 18px;
-  background: var(--color-bg-soft);
-  padding: 32px;
   position: relative;
   overflow: hidden;
-  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+
+  background: var(--color-bg-soft);
+  border: 1px solid var(--color-border);
+  border-radius: 18px;
+  padding: 32px;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
 }
 
 .service-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 20px 40px rgba(0,0,0,.08);
-  border-color: var(--color-border-strong);
+  border-color: var(--color-primary);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
 }
 
+/* ICON */
 .service-icon {
   width: 56px;
   height: 56px;
   border-radius: 14px;
-  background: rgba(122,156,108,.15);
+  background: rgba(122, 156, 108, 0.15);
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   font-size: 26px;
   color: var(--color-primary);
   margin-bottom: 24px;
 }
 
+/* TITLE */
 .service-card h2 a {
   color: var(--color-text-main);
   text-decoration: none;
@@ -36,11 +45,14 @@
   color: var(--color-primary);
 }
 
+/* TEASER */
 .service-card p {
   color: var(--color-text-muted);
   line-height: 1.65;
+  font-size: 0.95rem;
 }
 
+/* CTA */
 .service-card .btn {
   margin-top: auto;
   padding: 12px 18px;
@@ -54,23 +66,25 @@
   outline: none !important;
   box-shadow: 0 4px 10px rgba(0,0,0,.08);
 
-  transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
 }
 
-/* hover */
 .service-card .btn:hover {
   background: var(--color-accent-hover);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
   transform: translateY(-2px);
 }
 
-/* focus – kék keret HALÁLA */
 .service-card .btn:focus,
 .service-card .btn:focus-visible {
   outline: none !important;
   box-shadow: none !important;
 }
 
+/* FEATURED */
 .service-card.featured {
   border-width: 2px;
 }
@@ -80,9 +94,11 @@
   position: absolute;
   top: 18px;
   right: -46px;
+
   background: var(--color-primary);
   color: #fff;
   padding: 6px 56px;
+
   transform: rotate(45deg);
   font-size: 12px;
   font-weight: 600;

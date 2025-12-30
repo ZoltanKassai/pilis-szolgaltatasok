@@ -26,7 +26,9 @@
     </header>
 
     <div class="services-grid">
-      {{ partial "service-card.html" . }}
+      {{ range first 3 (where .Site.RegularPages "Section" "szolgaltatasok") }}
+        {{ partial "service-card.html" . }}
+      {{ end }}
     </div>
 
     <div class="section-cta text-center">
