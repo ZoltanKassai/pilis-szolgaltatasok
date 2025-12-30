@@ -6,8 +6,6 @@ title: "Kertrendezés Piliscsabán"
 description: "Teljes körű kertrendezés Piliscsabán – kerti utak, tipegők, támfalak, kerti építmények, tereprendezés, ültetés."
 ---
 
-## Kertrendezés Piliscsabán és környékén
-
 Teljes körű kertrendezést vállalok Piliscsabán és a környező településeken.
 
 ### Amit csinálok:

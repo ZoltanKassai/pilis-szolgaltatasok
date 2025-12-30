@@ -18,15 +18,75 @@
   </div>
 </section>
 
+<h2 class="sr-only">
+  Kültéri és beltéri szolgáltatások a Pilis környékén
+</h2>
+
+<section class="services-intro">
+  <div class="container">
+    <div class="services-intro-inner">
+      <p>
+        Kültéri és beltéri kivitelezési munkákat vállalok
+        <strong>Piliscsabán és a környező településeken</strong>.
+        A szolgáltatások között megtalálod a kertrendezést,
+        támfal építést, szalagparketta lerakást és egyéb
+        kisebb építőipari munkákat.
+      </p>
+
+      <p>
+        Ha megbízható, korrekt árú kivitelezőt keresel a Pilis
+        környékén, itt megtalálod az általam végzett munkákat
+        és a részletes leírásokat.
+      </p>
+    </div>
+  </div>
+</section>
+
 <!-- SZOLGÁLTATÁS KÁRTYÁK -->
 <div class="container pb-6">
   <div class="row">
-    {{ range .RegularPages }}
+    {{ range where .Site.RegularPages "Section" "szolgaltatasok" }}
       <div class="col-12 col-md-6 mb-4 d-flex">
         {{ partial "service-card.html" . }}
       </div>
     {{ end }}
   </div>
 </div>
+
+<section class="service-areas">
+  <div class="container">
+    <div class="service-areas-inner">
+      <h2 class="h4">Hol érhetők el a szolgáltatások?</h2>
+
+      <p>
+        Szolgáltatásaim elsősorban <strong>Piliscsabán</strong> érhetők el,
+        valamint a környező településeken:
+      </p>
+
+      <ul class="service-areas-list">
+        <li>Esztergom</li>
+        <li>Dorog</li>
+        <li>Tokod</li>
+        <li>Kesztölc</li>
+        <li>Leányvár</li>
+        <li>Piliscsév</li>
+        <li>Pilisjászfalu</li>
+        <li>Úny</li>
+        <li>Dág</li>
+        <li>Csolnok</li>
+        <li>Perbál</li>
+        <li>Tök</li>
+        <li>Zsámbék</li>
+        <li>Telki</li>
+        <li>Solymár</li>
+        <li>Pilisszentiván</li>
+        <li>Pilisvörösvár</li>
+        <li>Csobánka</li>
+        <li>Pilisszántó</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
 
 {{ end }}
