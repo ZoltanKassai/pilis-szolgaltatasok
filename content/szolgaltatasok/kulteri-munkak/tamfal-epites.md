@@ -13,3 +13,8 @@ Támfalat építek Piliscsabán és a környező településeken, legyen szó:
 - előregyártott elemes támfalról
 
 Nem borul le, nem reped szét, jól néz ki.
+
+
+### Hol vállalok munkát?
+
+Szolgáltatásaim elsősorban Piliscsabán érhetők el, valamint Esztergomban, Dorogon, Tokodon, Kesztölcön, Leányváron, Piliscséven, Pilisjászfalun, Únyban, Dágon, Csolnokon, Perbálon, Tökön, Zsámbékon, Telkiben, Solymáron, Pilisszentivánon, Pilisvörösváron, Csobánkán és Pilisszántón.
