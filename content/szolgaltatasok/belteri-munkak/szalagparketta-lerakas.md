@@ -1,4 +1,5 @@
 ---
+icon: fa-layer-group
 title: "Szalagparketta lerakás Piliscsabán"
 description: "Precíz szalagparketta lerakás Piliscsabán és környékén – aljzat előkészítéssel."
 ---

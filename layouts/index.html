@@ -61,32 +61,6 @@
     </div>
   </section>
 
-  <section class="home-services">
-    <div class="container">
-  
-      <div class="section-head text-center">
-        <h2>Szolgáltatásaink</h2>
-        <p>Piliscsabán és környékén vállalt munkáink</p>
-      </div>
-  
-      <div class="row">
-        {{ range first 2 (where .Site.RegularPages "Section" "szolgaltatasok") }}
-          <div class="col-12 col-md-6 mb-4 d-flex">
-            {{ partial "service-card.html" . }}
-          </div>
-        {{ end }}
-      </div>
-  
-      <div class="text-center mt-4">
-        <a href="/szolgaltatasok/" class="btn btn-primary">
-          Összes szolgáltatás
-        </a>
-      </div>
-  
-    </div>
-  </section>
-  
-
   <section class="cta">
     <div class="container cta-inner">
   
