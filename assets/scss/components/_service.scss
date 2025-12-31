@@ -1,22 +1,14 @@
-/* ===============================
-   SERVICE PAGES
-================================ */
-
-.service-content .service-article {
-  background: red !important;
-}
-
 .service-content {
   padding: 80px 0;
-  background: var(--color-bg-soft);
+  background: #f6f7f8;
 }
 
 .service-article {
-  background: #fff;
+  background: #ffffff;
   padding: 56px 60px;
   border-radius: 22px;
-  border: 1px solid var(--color-border);
-  box-shadow: 0 30px 60px rgba(0,0,0,.08);
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.08);
 }
 
 .service-article p {
@@ -30,7 +22,7 @@
   margin-bottom: 14px;
   font-size: 1.25rem;
   font-weight: 600;
-  color: var(--color-primary-dark);
+  color: #1f2937;
 }
 
 .service-article ul {
@@ -41,8 +33,6 @@
 .service-article li {
   margin-bottom: 10px;
 }
-
-/* ===== CTA ===== */
 
 .service-cta {
   padding: 90px 0;
@@ -60,11 +50,9 @@
 
 .service-cta p {
   font-size: 1.1rem;
-  color: var(--color-text-muted);
+  color: #6b7280;
   margin-bottom: 28px;
 }
-
-/* ===== MOBILE ===== */
 
 @media (max-width: 768px) {
   .service-article {
