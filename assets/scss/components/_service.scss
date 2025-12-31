@@ -1,0 +1,73 @@
+/* ===============================
+   SERVICE PAGES
+================================ */
+
+.service-content .service-article {
+  background: red !important;
+}
+
+.service-content {
+  padding: 80px 0;
+  background: var(--color-bg-soft);
+}
+
+.service-article {
+  background: #fff;
+  padding: 56px 60px;
+  border-radius: 22px;
+  border: 1px solid var(--color-border);
+  box-shadow: 0 30px 60px rgba(0,0,0,.08);
+}
+
+.service-article p {
+  font-size: 1rem;
+  line-height: 1.75;
+  margin-bottom: 18px;
+}
+
+.service-article h3 {
+  margin-top: 48px;
+  margin-bottom: 14px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-primary-dark);
+}
+
+.service-article ul {
+  margin: 18px 0 28px;
+  padding-left: 20px;
+}
+
+.service-article li {
+  margin-bottom: 10px;
+}
+
+/* ===== CTA ===== */
+
+.service-cta {
+  padding: 90px 0;
+  background: linear-gradient(
+    180deg,
+    rgba(245, 209, 95, 0.18),
+    rgba(245, 209, 95, 0.06)
+  );
+}
+
+.service-cta h2 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.service-cta p {
+  font-size: 1.1rem;
+  color: var(--color-text-muted);
+  margin-bottom: 28px;
+}
+
+/* ===== MOBILE ===== */
+
+@media (max-width: 768px) {
+  .service-article {
+    padding: 32px 24px;
+  }
+}

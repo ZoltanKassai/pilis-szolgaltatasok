@@ -13,8 +13,7 @@
 @import "base/buttons";
 @import "base/header";
 
-// Components
-@import 'components/reset';
+// Components - default
 @import 'components/page';
 @import 'components/header';
 @import 'components/footer';
@@ -23,15 +22,14 @@
 @import 'components/main-menu';
 @import 'components/main-menu-mobile';
 @import 'components/list';
-@import 'components/single';
+
+// Components
 @import 'components/navigation';
 @import "components/service-card";
+@import "components/service";
+
+// Layouts
 @import "layout/hero";
 @import "layout/home";
-
-// Pages
-@import 'pages/services/page-services-list';
-@import 'pages/services/page-services-single';
-@import 'pages/services/service-summary';
-@import 'pages/work/work-summary';
-@import 'pages/work/page-work-single';
+ 
+@import "components/service";
