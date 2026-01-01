@@ -13,24 +13,7 @@
 
   .hero-inner {
     max-width: 820px;
-    margin: 0 auto;
-
-    .hero-home {
-      background-image:
-        linear-gradient(
-          rgba(0,0,0,0.45),
-          rgba(0,0,0,0.45)
-        ),
-        url("/images/hero/kertrendezes-piliscsaba.jpg");
-      background-size: cover;
-      background-position: center;
-      color: #fff;
-    
-      .hero-title,
-      .hero-subtitle {
-        color: #fff;
-      }
-    }    
+    margin: 0 auto;  
   }
 
   .hero-title {
@@ -46,6 +29,27 @@
     margin-bottom: 40px;
   }
 }
+
+.hero-home {
+  padding: 180px 0 3rem;
+
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.45)
+    ),
+    url("/images/hero/kertrendezes-piliscsaba.jpg");
+
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+
+  .hero-title,
+  .hero-subtitle {
+    color: #fff;
+  }
+}
+
 
 /* ===== HERO CTA BUTTON ===== */
 

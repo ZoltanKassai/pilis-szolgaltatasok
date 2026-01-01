@@ -7,16 +7,40 @@
   border-radius: 18px;
   padding: 32px;
 
+  display: flex;
+  flex-direction: column;
+
   transition:
     transform 0.25s ease,
     box-shadow 0.25s ease,
     border-color 0.25s ease;
 }
 
+/* finom lebegés */
 .service-card:hover {
   transform: translateY(-6px);
   border-color: var(--color-primary);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* CSILLÁMPOR – FÉNYCSÍK */
+.service-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.35),
+    transparent
+  );
+  transform: translateX(-100%);
+  transition: transform 0.6s ease;
+  pointer-events: none;
+}
+
+.service-card:hover::after {
+  transform: translateX(100%);
 }
 
 /* ICON */
@@ -78,13 +102,7 @@
   transform: translateY(-2px);
 }
 
-.service-card .btn:focus,
-.service-card .btn:focus-visible {
-  outline: none !important;
-  box-shadow: none !important;
-}
-
-/* FEATURED */
+/* FEATURED SZALAG */
 .service-card.featured {
   border-width: 2px;
 }
