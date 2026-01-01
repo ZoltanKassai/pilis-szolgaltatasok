@@ -2,8 +2,8 @@
 icon: fa-hammer
 featured: true
 weight: 10
-title: "Bontási munkák Piliscsabán"
-description: "Házbontás, csűrbontás, garázs és melléképület bontás Piliscsabán és környékén – fa, kő és beton szerkezetek."
+title: "Bontási munkák"
+description: "Házbontás, csűrbontás, garázs és melléképület bontás – fa, kő és beton szerkezetek."
 ---
 
 ## Bontási munkák Piliscsabán

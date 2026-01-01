@@ -1,8 +1,8 @@
 ---
 icon: fa-layer-group
 weight: 99
-title: "Szalagparketta lerakás Piliscsabán"
-description: "Precíz szalagparketta lerakás Piliscsabán és környékén – aljzat előkészítéssel."
+title: "Szalagparketta lerakás"
+description: "Precíz szalagparketta lerakás – aljzat előkészítéssel."
 ---
 
 ## Szalagparketta lerakás Piliscsabán

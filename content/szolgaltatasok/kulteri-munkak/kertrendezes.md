@@ -2,8 +2,8 @@
 icon: fa-tree
 featured: true
 weight: 10
-title: "Kertrendezés Piliscsabán"
-description: "Teljes körű kertrendezés Piliscsabán – kerti utak, tipegők, támfalak, kerti építmények, tereprendezés, ültetés."
+title: "Kertrendezés"
+description: "Teljes körű kertrendezés – kerti utak, tipegők, támfalak, kerti építmények, tereprendezés, ültetés."
 ---
 
 Teljes körű kertrendezést vállalok Piliscsabán és a környező településeken.

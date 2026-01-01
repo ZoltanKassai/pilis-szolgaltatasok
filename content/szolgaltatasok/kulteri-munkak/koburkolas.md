@@ -1,8 +1,8 @@
 ---
 icon: fa-gem
 weight: 15
-title: "Kőburkolás Piliscsabán"
-description: "Kültéri és beltéri kőburkolás természetes és műkővel Piliscsabán és környékén. Lábazat, fal, kerítés, támfal burkolása."
+title: "Kőburkolás"
+description: "Kültéri és beltéri kőburkolás természetes és műkővel. Lábazat, fal, kerítés, támfal burkolása."
 ---
 
 ## Kőburkolás Piliscsabán

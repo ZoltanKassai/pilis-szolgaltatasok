@@ -22,25 +22,16 @@
   Kültéri és beltéri szolgáltatások a Pilis környékén
 </h2>
 
-<section class="services-intro">
-  <div class="container">
-    <div class="services-intro-inner">
-      <p>
-        Kültéri és beltéri kivitelezési munkákat vállalok
-        <strong>Piliscsabán és a környező településeken</strong>.
-        A szolgáltatások között megtalálod a kertrendezést,
-        támfal építést, szalagparketta lerakást és egyéb
-        kisebb építőipari munkákat.
-      </p>
-
-      <p>
-        Ha megbízható, korrekt árú kivitelezőt keresel a Pilis
-        környékén, itt megtalálod az általam végzett munkákat
-        és a részletes leírásokat.
-      </p>
-    </div>
+<!-- SZOLGÁLTATÁS KÁRTYÁK -->
+<div class="container pb-6">
+  <div class="row">
+    {{ range where .Site.RegularPages "Section" "szolgaltatasok" }}
+      <div class="col-12 col-md-6 mb-4 d-flex">
+        {{ partial "service-card.html" . }}
+      </div>
+    {{ end }}
   </div>
-</section>
+</div>
 
 <section class="services-quality">
   <div class="container">
@@ -80,16 +71,17 @@
   </div>
 </section>
 
-<!-- SZOLGÁLTATÁS KÁRTYÁK -->
-<div class="container pb-6">
-  <div class="row">
-    {{ range where .Site.RegularPages "Section" "szolgaltatasok" }}
-      <div class="col-12 col-md-6 mb-4 d-flex">
-        {{ partial "service-card.html" . }}
-      </div>
-    {{ end }}
+<section class="cta">
+  <div class="container cta-inner">
+    <h2>Ajánlatra van szüksége?</h2>
+    <p>
+      Írjon vagy hívjon, rövid határidővel válaszolok – kötelezettség nélkül.
+    </p>
+    <a href="/contact/" class="btn-cta">
+      Ajánlatot kérek
+    </a>
   </div>
-</div>
+</section>  
 
 <section class="service-areas">
   <div class="container">

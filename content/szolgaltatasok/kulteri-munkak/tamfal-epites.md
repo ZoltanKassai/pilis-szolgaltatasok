@@ -2,8 +2,8 @@
 icon: fa-mountain
 featured: true
 weight: 10
-title: "Támfal építés Piliscsabán"
-description: "Terméskő, tégla és előregyártott támfal építés Piliscsabán és környékén."
+title: "Támfal építés"
+description: "Terméskő, tégla és előregyártott támfal építés."
 ---
 
 ## Támfal építés Piliscsabán

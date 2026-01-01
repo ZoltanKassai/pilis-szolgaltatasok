@@ -2,8 +2,8 @@
 icon: fa-border-all
 featured: false
 weight: 20
-title: "Lábazati burkolás Piliscsabán"
-description: "Lábazati burkolás szeletelt téglával, díszkővel és barabáskővel Piliscsabán és környékén. Tartós, időjárásálló kivitelezés."
+title: "Lábazati burkolás"
+description: "Lábazati burkolás szeletelt téglával, díszkővel és barabáskővel. Tartós, időjárásálló kivitelezés."
 ---
 
 ## Lábazati burkolás Piliscsabán

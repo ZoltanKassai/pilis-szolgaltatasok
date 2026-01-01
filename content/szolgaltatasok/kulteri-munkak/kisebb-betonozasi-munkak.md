@@ -2,8 +2,8 @@
 icon: fa-cubes
 featured: false
 weight: 40
-title: "Kisebb betonozási munkák Piliscsabán"
-description: "Kisebb betonozási munkák zsaluzással Piliscsabán és környékén – járdák, alapok, lépcsők, térbeton."
+title: "Kisebb betonozási munkák"
+description: "Kisebb betonozási munkák zsaluzással – járdák, alapok, lépcsők, térbeton."
 ---
 
 ## Kisebb betonozási munkák Piliscsabán
