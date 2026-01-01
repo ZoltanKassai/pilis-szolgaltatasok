@@ -18,23 +18,22 @@
   </div>
 </section>
 
-<section class="services-teaser">
+<section class="services-intro">
   <div class="container">
-    <header class="section-header text-center">
-      <h2>Szolgáltatásaink</h2>
-      <p>Kiemelt munkák Piliscsabán és környékén</p>
-    </header>
+    <div class="services-intro-inner">
+      <p>
+        Kültéri és beltéri kivitelezési munkákat vállalok
+        <strong>Piliscsabán és a környező településeken</strong>.
+        A szolgáltatások között megtalálod a kertrendezést,
+        támfal építést, szalagparketta lerakást és egyéb
+        kisebb építőipari munkákat.
+      </p>
 
-    <div class="services-grid">
-      {{ range first 3 (where .Site.RegularPages "Section" "szolgaltatasok") }}
-        {{ partial "service-card.html" . }}
-      {{ end }}
-    </div>
-
-    <div class="section-cta text-center">
-      <a href="/szolgaltatasok/" class="btn-hero">
-        Összes szolgáltatás
-      </a>
+      <p>
+        Ha megbízható, korrekt árú kivitelezőt keresel a Pilis
+        környékén, itt megtalálod az általam végzett munkákat
+        és a részletes leírásokat.
+      </p>
     </div>
   </div>
 </section>
@@ -63,19 +62,51 @@
     </div>
   </section>
 
+  <section class="services-teaser">
+    <div class="container">
+      <header class="section-header text-center">
+        <h2>Szolgáltatásaink</h2>
+        <p>Kiemelt munkák Piliscsabán és környékén</p>
+      </header>
+  
+      <div class="services-grid">
+        {{ range first 6 (where .Site.RegularPages "Section" "szolgaltatasok") }}
+          {{ partial "service-card.html" . }}
+        {{ end }}
+      </div>
+  
+      <div class="section-cta text-center">
+        <a href="/szolgaltatasok/" class="btn-hero">
+          Összes szolgáltatás
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="parallax-trust">
+    <div class="parallax-overlay"></div>
+    <div class="container">
+      <div class="parallax-inner">
+        <h2>Nem csak dolgozni járok ide</h2>
+        <p>
+          Piliscsabán élek, itt dolgozom, és itt számít a munkám híre.
+          Ezért minden kivitelezést úgy végzek el, mintha
+          <strong>a saját környezetemben</strong> készülne.
+        </p>
+        <a href="/contact/" class="btn-ghost">Ajánlatot kérek</a>
+      </div>
+    </div>
+  </section>
+
   <section class="cta">
     <div class="container cta-inner">
-  
       <h2>Ajánlatra van szükséged?</h2>
-  
       <p>
         Írj vagy hívj, rövid határidővel válaszolok – kötelezettség nélkül.
       </p>
-  
       <a href="/contact/" class="btn-cta">
         Ajánlatot kérek
       </a>
-  
     </div>
   </section>  
 
