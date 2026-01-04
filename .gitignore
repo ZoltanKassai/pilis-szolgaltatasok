@@ -9,3 +9,6 @@
 # Editor
 .vscode/
 .idea/
+
+# Picture
+static/images/hero/*.jpg
