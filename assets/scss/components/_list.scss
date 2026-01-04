@@ -1,82 +1,127 @@
 .services-intro {
-    padding: 48px 0 24px;
-  }
-  
-  .services-intro-inner {
-    max-width: 820px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  
-  .services-intro p {
-    color: var(--color-text-muted);
-    font-size: 1.05rem;
-    line-height: 1.7;
-    margin-bottom: 16px;
-  }
-  
-  .service-areas {
-    padding: 56px 0;
-    background: var(--color-bg-soft);
-    border-top: 1px solid var(--color-border);
-  }
-  
-  .service-areas-inner {
-    max-width: 960px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  
-  .service-areas h2 {
-    margin-bottom: 12px;
-  }
-  
-  .service-areas p {
-    color: var(--color-text-muted);
-    margin-bottom: 24px;
-  }
-  
-  .service-areas-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 8px 16px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .service-areas-list li {
-    font-size: 0.95rem;
-    color: var(--color-text-main);
-  }
+  padding: 48px 0 24px;
+}
 
-  .services-quality {
-    padding: 3rem 0;
-    background-color: #f7f8f9;
-  
-    .services-quality-inner {
-      max-width: 760px;
-      margin: 0 auto;
-      padding-left: 1.5rem;
-      border-left: 4px solid #e0e0e0;
-  
-      h2 {
-        margin-bottom: 1.25rem;
+.services-intro-inner {
+  max-width: 820px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.services-intro p {
+  color: var(--color-text-muted);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+/* =========================================================
+   MIÉRT ENGEM VÁLASSZ / SERVICES QUALITY
+   ========================================================= */
+
+.services-quality {
+  padding: 72px 0;
+  background-color: #f7f8f9;
+  border-top: 1px solid var(--color-border);
+
+  .services-quality-inner {
+    max-width: 760px;
+    margin: 0 auto;
+    padding-left: 1.5rem;
+    border-left: 4px solid #e0e0e0;
+
+    h2 {
+      margin-bottom: 1.5rem; // ⬅️ fontos: cím ne érjen ikonhoz
+      font-weight: 600;
+      color: #222;
+    }
+
+    p {
+      margin-bottom: 1rem;
+      line-height: 1.65;
+      color: #444;
+
+      strong {
+        color: #111;
         font-weight: 600;
-        color: #222;
-      }
-  
-      p {
-        margin-bottom: 1rem;
-        line-height: 1.65;
-        color: #444;
-  
-        strong {
-          color: #111;
-          font-weight: 600;
-        }
       }
     }
   }
+}
+
+/* =========================================================
+   SZOLGÁLTATÁSI TERÜLETEK
+   ========================================================= */
+
+.service-areas {
+  padding: 56px 0;
+  background: var(--color-bg-soft);
+  border-top: 1px solid var(--color-border);
+}
+
+.service-areas-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.service-areas h2 {
+  margin-bottom: 12px;
+}
+
+.service-areas p {
+  color: var(--color-text-muted);
+  margin-bottom: 24px;
+}
+
+.service-areas-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 8px 16px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.service-areas-list li {
+  font-size: 0.95rem;
+  color: var(--color-text-main);
+}
+
+.container.pb-6 {
+  padding-bottom: 4rem;
+}
+
+.services-quality {
+  margin-top: 3rem;
+}
+
+/* =========================================================
+  SERVICES GRID (kártyalista)
+  ========================================================= */
+
+  .services-list {
+    padding: 64px 0;
+  }
   
+  .services-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  
+  /* Tablet */
+  @media (min-width: 640px) {
+    .services-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  /* Desktop */
+  @media (min-width: 1024px) {
+    .services-grid {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+    }
+  }
   
