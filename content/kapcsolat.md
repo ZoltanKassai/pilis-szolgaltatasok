@@ -20,7 +20,7 @@ Gyors egyeztetés, azonnali visszajelzés.
 Ha részletesebben leírná a munkát, üzenetben is megteheti.
 
 📍 **Helyszíni felmérés**  
-Szükség esetén személyesen megnézem, miről van szó – így pontosabb ajánlat készül.
+Nagyobb munkák esetén személyesen megnézem, miről van szó – így pontosabb ajánlat készül.
 
 ---
 
