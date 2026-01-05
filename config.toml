@@ -2,8 +2,3 @@ baseURL = "http://localhost:1313/"
 languageCode = "hu-hu"
 title = "Pilis környéki szolgáltatások"
 theme = "hero"
-
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true

@@ -40,8 +40,6 @@ Ha inkább emailt írna:
 
 **📧 kapcsolat [kukac] example [pont] hu**
 
-Fotókat, részleteket is nyugodtan küldhet.
-
 ---
 
 ## Rólam – miért dolgozom máshogy?
