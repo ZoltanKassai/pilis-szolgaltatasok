@@ -1,0 +1,177 @@
+/* =========================================================
+   KAPCSOLAT OLDAL
+   ========================================================= */
+
+   .page .content {
+    margin-top: 3rem;
+  }
+  
+  /* ----------- SZEKCIÓ ELVÁLASZTÁS ----------- */
+  
+  .page .content hr {
+    margin: 3rem 0;
+    border: 0;
+    border-top: 1px solid var(--color-border);
+  }
+  
+  /* ----------- FEJEZETCÍMEK ----------- */
+  
+  .page .content h2 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+  
+  .page .content h2:not(:first-child) {
+    margin-top: 3rem;
+  }
+  
+  /* =========================================================
+     TELEFONOS BLOKK – LEGFONTOSABB
+     ========================================================= */
+  
+  .page .content h2:has(+ p strong) {
+    scroll-margin-top: 120px;
+  }
+  
+  .page .content p strong {
+    font-size: 1.15rem;
+  }
+  
+  /* Telefon kiemelése */
+  .page .content p strong:has(a),
+  .page .content p strong:has(span) {
+    display: inline-block;
+    margin-top: 0.5rem;
+  }
+  
+  /* =========================================================
+     ŰRLAP
+     ========================================================= */
+  
+  .contact-form {
+    margin: 2rem 0;
+    padding: 2rem;
+    background: var(--color-bg-soft);
+    border: 1px solid var(--color-border);
+    border-radius: 18px;
+  
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Honeypot elrejtése */
+  .contact-form .hidden {
+    display: none;
+  }
+  
+  /* ----------- FORM GROUP ----------- */
+  
+  .contact-form .form-group {
+    margin-bottom: 1.25rem;
+  }
+  
+  .contact-form label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0.35rem;
+    color: var(--color-text-main);
+  }
+  
+  /* ----------- INPUTOK ----------- */
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 12px 14px;
+    font-size: 0.95rem;
+  
+    border-radius: 12px;
+    border: 1px solid var(--color-border);
+    background: #fff;
+  
+    transition:
+      border-color 0.2s ease,
+      box-shadow 0.2s ease;
+  }
+  
+  .contact-form textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(122, 156, 108, 0.15);
+  }
+  
+  /* ----------- SUBMIT GOMB ----------- */
+  
+  .contact-form button {
+    margin-top: 0.5rem;
+    padding: 14px 22px;
+    font-weight: 600;
+  
+    background: var(--color-accent);
+    color: #1f2937;
+  
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+  
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease,
+      background 0.2s ease;
+  }
+  
+  .contact-form button:hover {
+    background: var(--color-accent-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* =========================================================
+     EMAIL BLOKK
+     ========================================================= */
+  
+  .page .content a[href^="mailto:"] {
+    font-weight: 600;
+    color: var(--color-primary);
+    text-decoration: none;
+  }
+  
+  .page .content a[href^="mailto:"]:hover {
+    text-decoration: underline;
+  }
+  
+  /* =========================================================
+     LISTÁK (RÓLAM, TERÜLETEK)
+     ========================================================= */
+  
+  .page .content ul {
+    margin-left: 1.25rem;
+  }
+  
+  .page .content ul li {
+    margin-bottom: 0.35rem;
+  }
+  
+  /* =========================================================
+     MOBIL FINOMHANGOLÁS
+     ========================================================= */
+  
+  @media (max-width: 576px) {
+    .contact-form {
+      padding: 1.5rem;
+    }
+  
+    .contact-form button {
+      width: 100%;
+    }
+  }
+  
