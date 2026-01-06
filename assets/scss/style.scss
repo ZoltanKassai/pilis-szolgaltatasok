@@ -12,16 +12,15 @@
 @import "base/colors";
 @import "base/buttons";
 @import "base/header";
+@import 'base/footer';
 
 // Components - default
 @import 'components/page';
-@import 'components/header';
-@import 'components/footer';
-@import 'components/sub-footer';
 @import 'components/logo';
 @import 'components/main-menu';
 @import 'components/main-menu-mobile';
 @import 'components/list';
+@import 'components/map';
 
 // Components
 @import 'components/navigation';

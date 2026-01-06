@@ -1,12 +1,65 @@
 <head>
-    {{ partial "seo.html" . }}
-  
-    <link rel="stylesheet" href="/css/style.css">
-  
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      crossorigin="anonymous"
-    >
-  </head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <title>
+    {{ if .IsHome }}
+      {{ .Site.Title }}
+    {{ else }}
+      {{ .Title }} – {{ .Site.Title }}
+    {{ end }}
+  </title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  {{ if .Description }}
+    <meta name="description" content="{{ .Description }}">
+  {{ else }}
+    <meta name="description" content="Kültéri és beltéri munkák Piliscsabán és környékén. Korrekt kivitelezés, gyors egyeztetés, megbízható munka.">
+  {{ end }}
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ .Title }}">
+  <meta property="og:description" content="{{ .Description }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:site_name" content="{{ .Site.Title }}">
+
+  <!-- Fav -->
+  <link rel="icon" href="{{ "favicon.png" | relURL }}">
+
+  <!-- CSS -->
+  {{ $style := resources.Get "scss/style.scss" | toCSS | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  >
+
+  <!-- LocalBusiness schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Pilis környéki szolgáltatások",
+    "image": "{{ "images/og.jpg" | absURL }}",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Piliscsaba",
+      "addressCountry": "HU"
+    },
+    "areaServed": {
+      "@type": "AdministrativeArea",
+      "name": "Piliscsaba és környéke"
+    },
+    "telephone": "+36301234567",
+    "email": "kapcsolat@example.hu",
+    "url": "{{ .Site.BaseURL }}"
+  }
+  </script>
+
+</head>

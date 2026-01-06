@@ -1,22 +1,47 @@
-.btn-primary {
-    background: var(--color-accent);
-    border: none;
-    color: #1f2937;
-  }
-  
-  .btn-primary:hover,
-  .btn-primary:focus {
-    background: var(--color-accent-hover);
-    color: #1f2937;
-  }
-
+.btn,
+.btn-primary,
 .btn-hero,
-.btn-cta {
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.9rem 1.6rem;
+  border-radius: 14px;
+  font-weight: 600;
   text-decoration: none !important;
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  line-height: 1.2;
 }
 
-.btn-hero:hover,
-.btn-cta:hover {
-  text-decoration: none !important;
+/* Sárga fő gomb */
+.btn-primary,
+.btn-hero {
+  background: #f5d76e;
+  color: #1f2933;
+
+  &:hover {
+    background: darken(#f5d76e, 7%);
+    transform: translateY(-1px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  }
 }
-  
+
+/* Parallax / CTA ghost */
+.btn-ghost {
+  background: transparent;
+  color: #fff;
+  border: 2px solid rgba(255,255,255,0.7);
+
+  &:hover {
+    background: rgba(255,255,255,0.12);
+    border-color: #fff;
+  }
+}
+
+/* Szerviz kártyák alján */
+.service-card .btn {
+  margin-top: auto;
+  width: 100%;
+}

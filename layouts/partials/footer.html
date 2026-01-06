@@ -1,25 +1,21 @@
 <div class="footer">
   <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="footer-inner">
-          {{ if .Site.Data.social }}
-          <ul class="social">
-              {{ range .Site.Data.social }}
-                  <li><a href="{{ .link }}" target="blank"><img width="20" height="20" src="{{ .image | relURL }}" title="{{ .name }}" alt="{{ .name }}" /></a></li>
-              {{ end }}
-          </ul>
-          {{ end }}
-          <ul class="footer-menu">
-            <li><a href="/">Főoldal</a></li>
-            <li><a href="/kapcsolat/">Kapcsolat</a></li>
-            <li class="copyright">© {{ now.Year }} Pilis környéki szolgáltatások</li>
-            <li class="copyright">
-              Készítette: <a href="https://www.egyszeruweblap.hu">Egyszerű Weblap</a>
-            </li>
-          </ul>
-        </div>
+    <div class="footer-inner">
+
+      <nav class="footer-nav">
+        <a href="/">Főoldal</a>
+        <a href="/kapcsolat/">Kapcsolat</a>
+      </nav>
+
+      <div class="footer-meta">
+        <span>© {{ now.Year }} Pilis környéki szolgáltatások</span>
+        <span>Piliscsaba és környéke</span>
       </div>
+
+      <div class="footer-credit">
+        Készítette: <a href="https://www.egyszeruweblap.hu" target="_blank" rel="noopener">Egyszerű Weblap</a>
+      </div>
+
     </div>
   </div>
 </div>
