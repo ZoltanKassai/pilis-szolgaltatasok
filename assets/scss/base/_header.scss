@@ -1,17 +1,45 @@
 /* ===============================
-   HEADER LAYOUT
+   HEADER – ALAP & SCROLL
 ================================ */
 
 .header {
-  .container,
-  .header-inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    min-height: 72px;
-  }
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  transition:
+    background 0.3s ease,
+    box-shadow 0.3s ease,
+    backdrop-filter 0.3s ease;
 }
 
+/* 🔹 ALAPÁLLAPOT – NEM TELJESEN ÁTLÁTSZÓ */
+.header-absolute {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: saturate(180%) blur(6px);
+  -webkit-backdrop-filter: saturate(180%) blur(6px);
+}
+
+/* 🔹 SCROLL UTÁN – ERŐSEBB */
+.header.scrolled {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* ===============================
+   HEADER LAYOUT
+================================ */
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 72px;
+}
+
+/* LOGO */
 .site-logo {
   display: flex;
   align-items: center;
@@ -35,12 +63,7 @@
   }
 }
 
-.main-menu {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-}
-
+/* SCROLL UTÁNI KICSI LOGÓ */
 .header.scrolled .site-logo {
   font-size: 1.45rem;
 }
