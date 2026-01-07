@@ -1,3 +1,24 @@
+.hero-services {
+  position: relative;
+  background: url("/images/hero/kertrendezes-piliscsaba.jpg") center/cover fixed;
+  padding: 8rem 1rem 6rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      rgba(255,255,255,0.88),
+      rgba(255,255,255,0.95)
+    );
+  }
+
+  .hero-inner {
+    position: relative;
+    z-index: 2;
+  }
+}
+
 .services-intro {
   padding: 48px 0 24px;
 }
@@ -122,6 +143,18 @@
     .services-grid {
       grid-template-columns: repeat(3, 1fr);
       gap: 32px;
+    }
+  }
+  
+  a {
+    color: #2f4f3e;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(47,79,62,.25);
+    transition: all .2s ease;
+  
+    &:hover {
+      color: #d9822b;
+      border-bottom-color: #d9822b;
     }
   }
   

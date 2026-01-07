@@ -3,3 +3,6 @@ languageCode = "hu-hu"
 title = "Pilis környéki szolgáltatások"
 theme = "hero"
 enableRobotsTXT = true
+
+[params]
+areaServed = "Piliscsaba és környéke"

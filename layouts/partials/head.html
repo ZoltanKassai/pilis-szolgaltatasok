@@ -20,10 +20,10 @@
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Kültéri és beltéri kivitelezés Piliscsabán">
-  <meta property="og:description" content="Kertrendezés, bontás, támfal építés és egyéb kivitelezési munkák Piliscsabán és környékén.">
-  <meta property="og:url" content="https://www.peldateoldalad.hu/">
-  <meta property="og:image" content="https://www.peldateoldalad.hu/og.jpg">
+  <meta property="og:title" content="{{ .Title }}">
+  <meta property="og:description" content="{{ .Description }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:image" content="{{ .Site.BaseURL }}og.jpg">
 
   <!-- Fav -->
   <link rel="icon" href="{{ "favicon.png" | relURL }}">
@@ -40,14 +40,14 @@
     referrerpolicy="no-referrer"
   >
 
-<!-- LocalBusiness schema -->
-<script type="application/ld+json">
+  <!-- LocalBusiness schema (EGYETLEN HELYEN) -->
+  <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "@id": "{{ .Site.BaseURL }}#localbusiness",
-    "name": "Pilis környéki szolgáltatások",
-    "description": "Kültéri és beltéri kivitelezési munkák Piliscsabán és környékén. Kertrendezés, bontás, támfal építés, kőburkolás.",
+    "name": "{{ .Site.Title }}",
+    "description": "Kültéri és beltéri kivitelezési munkák Piliscsabán és környékén.",
     "url": "{{ .Site.BaseURL }}",
     "telephone": "+36709539785",
     "email": "zoltankassai8@google.com",
@@ -57,8 +57,7 @@
       "addressLocality": "Piliscsaba",
       "addressCountry": "HU"
     },
-    "image": "{{ .Site.BaseURL }}/og.jpg"
+    "image": "{{ .Site.BaseURL }}og.jpg"
   }
   </script>
-
 </head>
