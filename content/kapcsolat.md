@@ -15,7 +15,7 @@ Nem call center, nem közvetítő: **közvetlenül velem beszél**.
 
 Ha gyors válaszra van szüksége, hívjon nyugodtan:
 
-**📞 06 30 123 4567**
+**📞 +3670 9539 785**
 
 Rövid egyeztetés után meg tudom mondani:
 - vállalom-e a munkát
@@ -38,7 +38,7 @@ Rövid egyeztetés után meg tudom mondani:
 
 Ha inkább emailt írna:
 
-**📧 kapcsolat [kukac] example [pont] hu**
+**📧 zoltankassai8 [kukac] gmail [pont] com**
 
 ---
 

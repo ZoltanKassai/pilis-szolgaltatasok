@@ -20,10 +20,10 @@
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="{{ .Title }}">
-  <meta property="og:description" content="{{ .Description }}">
-  <meta property="og:url" content="{{ .Permalink }}">
-  <meta property="og:site_name" content="{{ .Site.Title }}">
+  <meta property="og:title" content="Kültéri és beltéri kivitelezés Piliscsabán">
+  <meta property="og:description" content="Kertrendezés, bontás, támfal építés és egyéb kivitelezési munkák Piliscsabán és környékén.">
+  <meta property="og:url" content="https://www.peldateoldalad.hu/">
+  <meta property="og:image" content="https://www.peldateoldalad.hu/og.jpg">
 
   <!-- Fav -->
   <link rel="icon" href="{{ "favicon.png" | relURL }}">
@@ -40,25 +40,24 @@
     referrerpolicy="no-referrer"
   >
 
-  <!-- LocalBusiness schema -->
-  <script type="application/ld+json">
+<!-- LocalBusiness schema -->
+<script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
+    "@id": "{{ .Site.BaseURL }}#localbusiness",
     "name": "Pilis környéki szolgáltatások",
-    "image": "{{ "images/og.jpg" | absURL }}",
+    "description": "Kültéri és beltéri kivitelezési munkák Piliscsabán és környékén. Kertrendezés, bontás, támfal építés, kőburkolás.",
+    "url": "{{ .Site.BaseURL }}",
+    "telephone": "+36709539785",
+    "email": "zoltankassai8@google.com",
+    "areaServed": "Piliscsaba és környéke",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Piliscsaba",
       "addressCountry": "HU"
     },
-    "areaServed": {
-      "@type": "AdministrativeArea",
-      "name": "Piliscsaba és környéke"
-    },
-    "telephone": "+36301234567",
-    "email": "kapcsolat@example.hu",
-    "url": "{{ .Site.BaseURL }}"
+    "image": "{{ .Site.BaseURL }}/og.jpg"
   }
   </script>
 

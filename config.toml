@@ -2,3 +2,4 @@ baseURL = "http://localhost:1313/"
 languageCode = "hu-hu"
 title = "Pilis környéki szolgáltatások"
 theme = "hero"
+enableRobotsTXT = true
