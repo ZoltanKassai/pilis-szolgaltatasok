@@ -1,6 +1,7 @@
 ---
 icon: fa-screwdriver
-weight: 120
+weight: 3
+featured: true
 title: "Falfúrás – karnisok, polcok, képek rögzítése"
 description: "Precíz falfúrás karnisokhoz, polcokhoz, képekhez és egyéb rögzítésekhez."
 ---

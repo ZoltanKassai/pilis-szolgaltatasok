@@ -36,7 +36,13 @@
 
 <body class='page {{ block "body_classes" . }}{{ end }}'>
   {{ partial "main-menu-mobile.html" . }}
+
   <div id="wrapper" class="wrapper">
+
+    <div class="site-logo">
+      <a href="/">Pilis<span>Szolg</span></a>
+    </div>
+
     {{ partial "header.html" . }}
     {{ block "main" . }}
     {{ end }}
@@ -50,9 +56,9 @@
   {{ end }}
 
   {{ if hugo.IsServer }}
-  <script type="text/javascript" src="{{ $scripts.RelPermalink }}"></script>
+    <script type="text/javascript" src="{{ $scripts.RelPermalink }}"></script>
   {{ else }}
-  <script type="text/javascript" src="{{ ($scripts | minify | fingerprint).RelPermalink }}"></script>
+    <script type="text/javascript" src="{{ ($scripts | minify | fingerprint).RelPermalink }}"></script>
   {{ end }}
 
   {{ partial "google-analytics.html" . }}

@@ -1,6 +1,7 @@
 ---
 icon: fa-layer-group
-weight: 99
+weight: 2
+featured: true
 title: "Szalagparketta lerakás"
 description: "Precíz szalagparketta lerakás – aljzat előkészítéssel."
 ---

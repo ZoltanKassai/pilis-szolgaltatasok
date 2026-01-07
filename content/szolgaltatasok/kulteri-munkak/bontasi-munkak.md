@@ -1,7 +1,7 @@
 ---
 icon: fa-hammer
 featured: true
-weight: 10
+weight: 1
 title: "Bontási munkák"
 description: "Házbontás, csűrbontás, garázs és melléképület bontás – fa, kő és beton szerkezetek."
 ---

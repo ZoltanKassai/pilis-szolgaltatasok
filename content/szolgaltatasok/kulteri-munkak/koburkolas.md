@@ -1,5 +1,6 @@
 ---
 icon: fa-gem
+featured: true
 weight: 15
 title: "Kőburkolás"
 description: "Kültéri és beltéri kőburkolás természetes és műkővel. Lábazat, fal, kerítés, támfal burkolása."

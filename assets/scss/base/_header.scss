@@ -1,21 +1,46 @@
 /* ===============================
-   HEADER SCROLL EFFECT
+   HEADER LAYOUT
 ================================ */
 
 .header {
-    transition: background .3s ease, box-shadow .3s ease, backdrop-filter .3s ease;
+  .container,
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 72px;
   }
-  
-  /* alapállapot (felül) */
-  .header-absolute {
-    background: transparent;
+}
+
+.site-logo {
+  display: flex;
+  align-items: center;
+
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+
+    color: #2f4f3e;
+    text-decoration: none;
+
+    span {
+      color: #7a9c6c;
+      font-weight: 500;
+    }
   }
-  
-  /* scroll után */
-  .header.scrolled {
-    background: rgba(255, 255, 255, 0.9);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
-  }
-  
+}
+
+.main-menu {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.header.scrolled .site-logo {
+  font-size: 1.45rem;
+}
