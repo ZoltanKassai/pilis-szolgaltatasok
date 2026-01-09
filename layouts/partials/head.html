@@ -51,25 +51,8 @@
     referrerpolicy="no-referrer"
   >
 
-  {{/* LOCAL BUSINESS SCHEMA – PARAMS-BÓL */}}
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "@id": "{{ .Site.BaseURL }}#localbusiness",
-    "name": "{{ .Site.Title }}",
-    "description": "Kültéri és beltéri kivitelezési munkák {{ .Site.Params.areaServed }} területén.",
-    "url": "{{ .Site.BaseURL }}",
-    "telephone": "{{ .Site.Params.phone }}",
-    "email": "{{ .Site.Params.email }}",
-    "areaServed": "{{ .Site.Params.areaServed }}",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Piliscsaba",
-      "addressCountry": "HU"
-    },
-    "image": "{{ .Site.BaseURL }}{{ .Site.Params.ogImage }}"
-  }
+    {{ partial "service-schema.jsonld.html" . }}
   </script>
 
 </head>
