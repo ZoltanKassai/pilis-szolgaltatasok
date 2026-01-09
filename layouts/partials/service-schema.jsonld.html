@@ -1,74 +1,73 @@
 <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "@id": "{{ .Site.BaseURL }}#service-main",
-    "name": "{{ .Site.Params.ogContextName }}",
-    "description": "{{ .Site.Params.description }}",
-    "provider": {
-      "@type": "LocalBusiness",
-      "@id": "{{ .Site.BaseURL }}#localbusiness",
-      "name": "{{ .Site.Title }}",
-      "url": "{{ .Site.BaseURL }}",
-      "telephone": "{{ .Site.Params.phone }}",
-      "email": "{{ .Site.Params.email }}",
-      "image": "{{ .Site.BaseURL }}{{ .Site.Params.ogImage }}",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "{{ .Site.Params.ogContextAddressLocality }}",
-        "addressCountry": "{{ .Site.Params.ogContextAddressCountry }}"
-      }
-    },
-    "areaServed": {
-      "@type": "AdministrativeArea",
-      "name": "{{ .Site.Params.areaServed }}"
-    },
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Kivitelezési szolgáltatások",
-      "itemListElement": [
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Bontási munkák",
-            "url": "{{ .Site.BaseURL }}szolgaltatasok/kulteri-munkak/bontasi-munkak/"
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Kertrendezés",
-            "url": "{{ .Site.BaseURL }}szolgaltatasok/kulteri-munkak/kertrendezes/"
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Támfal építés",
-            "url": "{{ .Site.BaseURL }}szolgaltatasok/kulteri-munkak/tamfal-epites/"
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Kőburkolás",
-            "url": "{{ .Site.BaseURL }}szolgaltatasok/kulteri-munkak/koburkolas/"
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Szalagparketta lerakás",
-            "url": "{{ .Site.BaseURL }}szolgaltatasok/belteri-munkak/szalagparketta-lerakas/"
-          }
-        }
-      ]
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "{{ .Site.BaseURL }}#service-main",
+  "name": "{{ .Site.Params.ogContextName }}",
+  "description": "{{ .Site.Params.description }}",
+  "provider": {
+    "@type": "LocalBusiness",
+    "@id": "{{ .Site.BaseURL }}#localbusiness",
+    "name": "{{ .Site.Title }}",
+    "url": "{{ .Site.BaseURL }}",
+    "telephone": "{{ .Site.Params.phone }}",
+    "email": "{{ .Site.Params.email }}",
+    "image": "{{ .Site.BaseURL }}{{ .Site.Params.ogImage }}",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "{{ .Site.Params.ogContextAddressLocality }}",
+      "addressCountry": "{{ .Site.Params.ogContextAddressCountry }}"
     }
+  },
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "{{ .Site.Params.areaServed }}"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Kivitelezési szolgáltatások",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Bontási munkák",
+          "url": "{{ .Site.BaseURL }}szolgaltatasok/kulteri-munkak/bontasi-munkak/"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Kertrendezés",
+          "url": "{{ .Site.BaseURL }}szolgaltatasok/kulteri-munkak/kertrendezes/"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Támfal építés",
+          "url": "{{ .Site.BaseURL }}szolgaltatasok/kulteri-munkak/tamfal-epites/"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Kőburkolás",
+          "url": "{{ .Site.BaseURL }}szolgaltatasok/kulteri-munkak/koburkolas/"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Szalagparketta lerakás",
+          "url": "{{ .Site.BaseURL }}szolgaltatasok/belteri-munkak/szalagparketta-lerakas/"
+        }
+      }
+    ]
   }
-  </script>
-  
+}
+</script>
