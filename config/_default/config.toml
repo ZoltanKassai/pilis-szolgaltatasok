@@ -1,0 +1,12 @@
+baseURL = "http://localhost:1313/"
+languageCode = "hu-hu"
+title = "Pilis környéki szolgáltatások"
+theme = "hero"
+enableRobotsTXT = true
+
+[params]
+description = "Kültéri és beltéri kivitelezési munkák Piliscsabán és környékén."
+areaServed = "Piliscsaba és környéke"
+phone = "+36709539785"
+email = "zoltankassai8@google.com"
+obfuscatedEmail = "zoltankassai8 [kukac] gmail [pont] com"
