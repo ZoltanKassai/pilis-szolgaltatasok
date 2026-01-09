@@ -1,82 +1,73 @@
-/* ===== MAIN MENU – FINAL DESIGN ===== */
+/* ===== MAIN MENU – FIXED ===== */
+
+/* UL reset + layout */
+.main-menu ul {
+  display: flex;
+  align-items: center;
+  gap: 8px;               /* EZ oldja meg az egymásra csúszást */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* LI reset */
+.main-menu li {
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;   /* ne törjön több sorba */
+}
 
 /* alap link */
 .main-menu a {
-  color: #1f2937; /* sötét grafitszürke */
+  display: inline-flex;  /* stabil méret */
+  align-items: center;
+  justify-content: center;
+  color: #1f2937;
   font-weight: 500;
   padding: 6px 14px;
   border-radius: 999px;
-  transition: all .2s ease;
-  outline: none;
+  transition: background .2s ease, color .2s ease;
+  text-decoration: none;
   box-shadow: none;
 }
 
-/* hover – finom, látható */
+/* hover */
 .main-menu a:hover {
-  background: rgba(245, 204, 76, 0.25); /* napsárga */
+  background: rgba(245, 204, 76, 0.25);
   color: #1f2937;
-  text-decoration: none;
 }
 
-/* focus / keyboard */
+/* focus */
 .main-menu a:focus,
 .main-menu a:focus-visible {
   outline: none;
-  box-shadow: none;
   background: rgba(245, 204, 76, 0.35);
 }
 
 /* aktív menüpont */
 .main-menu li.active a {
-  background: #8fb996; /* pasztell zöld */
-  color: #ffffff;
-}
-
-/* aktív hover maradjon stabil */
-.main-menu li.active a:hover,
-.main-menu li.active a:focus,
-.main-menu li.active a:focus-visible {
   background: #8fb996;
   color: #ffffff;
 }
 
-/* ===============================
-   MAIN MENU – FINAL (CSS VARS)
-================================ */
+/* aktív hover maradjon */
+.main-menu li.active a:hover,
+.main-menu li.active a:focus {
+  background: #8fb996;
+  color: #ffffff;
+}
 
-/* alap menü link */
+/* ===== HEADER ABSOLUTE VARIÁNS ===== */
+
 .header-absolute .main-menu a {
-  color: var(--color-text-main) !important;
-  font-weight: 500;
-  padding: 6px 14px;
-  border-radius: 999px;
-  transition: background .2s ease, color .2s ease;
+  color: var(--color-text-main);
 }
 
-/* hover – napsárga háttér */
 .header-absolute .main-menu a:hover {
-  background: rgba(245, 209, 95, 0.35); /* accent finoman */
-  color: var(--color-text-main) !important;
-  text-decoration: none;
+  background: rgba(245, 209, 95, 0.35);
 }
 
-/* focus / keyboard */
-.header-absolute .main-menu a:focus,
-.header-absolute .main-menu a:focus-visible {
-  outline: none;
-  box-shadow: none;
-  background: rgba(245, 209, 95, 0.45);
-}
-
-/* aktív menüpont */
 .header-absolute .main-menu li.active a {
   background: var(--color-primary);
-  color: #ffffff !important;
-}
-
-/* aktív hover maradjon stabil */
-.header-absolute .main-menu li.active a:hover,
-.header-absolute .main-menu li.active a:focus {
-  background: var(--color-primary);
-  color: #ffffff !important;
+  color: #ffffff;
 }

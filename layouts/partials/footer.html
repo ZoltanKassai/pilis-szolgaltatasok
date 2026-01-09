@@ -17,14 +17,14 @@
         </span>
 
         <div class="footer-contact">
-          <a href="tel:+36709539785" class="footer-link">
+          <a href="tel:{{ .Site.Params.phone }}" class="footer-link">
             <i class="fa-solid fa-phone"></i>
-            +36 70 9539 785
+            {{ .Site.Params.phone }}
           </a>
 
-          <a href="mailto:zoltankassai8@google.com" class="footer-link">
+          <a href="mailto:{{ .Site.Params.email }}" class="footer-link">
             <i class="fa-solid fa-envelope"></i>
-            zoltankassai8 [kukac] gmail [pont] com
+            {{ .Site.Params.obfuscatedEmail }}
           </a>
         </div>
       </div>

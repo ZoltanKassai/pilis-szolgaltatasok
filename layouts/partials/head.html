@@ -2,37 +2,49 @@
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
+  {{/* TITLE */}}
   <title>
     {{ if .IsHome }}
       {{ .Site.Title }}
     {{ else }}
-      {{ .Title }} – {{ .Site.Title }}
+      {{ .Title }} | {{ .Site.Title }}
     {{ end }}
   </title>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  {{/* META DESCRIPTION */}}
   {{ if .Description }}
     <meta name="description" content="{{ .Description }}">
   {{ else }}
-    <meta name="description" content="Kültéri és beltéri munkák Piliscsabán és környékén. Korrekt kivitelezés, gyors egyeztetés, megbízható munka.">
+    <meta
+      name="description"
+      content="Kültéri és beltéri kivitelezési munkák {{ .Site.Params.areaServed }} területén. Kertrendezés, bontás, parkettázás, kőburkolás – megbízható kivitelezés, korrekt árakon."
+    >
   {{ end }}
 
-  <!-- Open Graph -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  {{/* OPEN GRAPH */}}
   <meta property="og:type" content="website">
-  <meta property="og:title" content="{{ .Title }}">
-  <meta property="og:description" content="{{ .Description }}">
+  <meta property="og:title"
+        content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
+  <meta property="og:description"
+        content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
   <meta property="og:url" content="{{ .Permalink }}">
   <meta property="og:image" content="{{ .Site.BaseURL }}og.jpg">
 
-  <!-- Fav -->
+  {{/* FAVICON */}}
   <link rel="icon" href="{{ "favicon.png" | relURL }}">
 
-  <!-- CSS -->
-  {{ $style := resources.Get "scss/style.scss" | toCSS | minify | fingerprint }}
-  <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+  {{/* CSS */}}
+  {{ if hugo.IsServer }}
+    {{ $style := resources.Get "scss/style.scss" | toCSS (dict "targetPath" "css/style.css" "enableSourceMap" true) }}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+  {{ else }}
+    {{ $style := resources.Get "scss/style.scss" | toCSS (dict "targetPath" "css/style.css") | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+  {{ end }}
 
-  <!-- Font Awesome -->
+  {{/* FONT AWESOME */}}
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -40,18 +52,18 @@
     referrerpolicy="no-referrer"
   >
 
-  <!-- LocalBusiness schema (EGYETLEN HELYEN) -->
+  {{/* LOCAL BUSINESS SCHEMA – PARAMS-BÓL */}}
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "@id": "{{ .Site.BaseURL }}#localbusiness",
     "name": "{{ .Site.Title }}",
-    "description": "Kültéri és beltéri kivitelezési munkák Piliscsabán és környékén.",
+    "description": "Kültéri és beltéri kivitelezési munkák {{ .Site.Params.areaServed }} területén.",
     "url": "{{ .Site.BaseURL }}",
-    "telephone": "+36709539785",
-    "email": "zoltankassai8@google.com",
-    "areaServed": "Piliscsaba és környéke",
+    "telephone": "{{ .Site.Params.phone }}",
+    "email": "{{ .Site.Params.email }}",
+    "areaServed": "{{ .Site.Params.areaServed }}",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Piliscsaba",
@@ -60,4 +72,5 @@
     "image": "{{ .Site.BaseURL }}og.jpg"
   }
   </script>
+
 </head>
