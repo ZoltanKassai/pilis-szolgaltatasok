@@ -30,6 +30,7 @@
   <meta property="og:description" content="{{ .Description | default .Site.Params.description }}">
   <meta property="og:url" content="{{ .Permalink }}">
   <meta property="og:image" content="{{ .Site.BaseURL }}og.jpg">
+  <meta property="og:image" content="{{ .Site.Params.ogImage | absURL }}">  
 
   {{/* FAVICON */}}
   <link rel="icon" href="{{ "favicon.png" | relURL }}">
@@ -51,6 +52,6 @@
     referrerpolicy="no-referrer"
   >
 
-  {{ partial "service-schema.jsonld.html"}}   
+  {{ partial "service-schema.jsonld.html" . | safeHTML }}   
 
 </head>

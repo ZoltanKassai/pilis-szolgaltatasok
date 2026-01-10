@@ -15,10 +15,13 @@
     "image": "{{ .Site.BaseURL }}{{ .Site.Params.ogImage }}",
     "address": {
       "@type": "PostalAddress",
+      "streetAddress": "{{ .Site.Params.ogContextStreetAddress }}",
       "addressLocality": "{{ .Site.Params.ogContextAddressLocality }}",
+      "postalCode": "{{ .Site.Params.ogContextPostalCode }}",
       "addressCountry": "{{ .Site.Params.ogContextAddressCountry }}"
     }
   },
+  "openingHours": "{{ .Site.Params.ogContextOpeningHours }}",
   "areaServed": {
     "@type": "AdministrativeArea",
     "name": "{{ .Site.Params.areaServed }}"
