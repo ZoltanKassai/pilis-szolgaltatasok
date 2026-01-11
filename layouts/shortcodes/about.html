@@ -1,0 +1,9 @@
+<div class="about-block">
+    <img src="{{ .Get "image" }}" alt="{{ .Get "alt" }}" class="about-photo">
+  
+    <div class="about-text">
+      <h2>{{ .Get "title" }}</h2>
+      {{ .Inner | markdownify }}
+    </div>
+  </div>
+  

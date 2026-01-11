@@ -8,10 +8,24 @@
 {{ define "header_classes" }}{{ end }}
 
 {{ define "main" }}
+
+{{ if eq .RelPermalink "/kapcsolat/" }}
+<section class="hero hero-contact">
+  <div class="hero-inner text-center">
+    <h1>Kapcsolat – ajánlatkérés egyszerűen</h1>
+    <p>Ha kültéri vagy beltéri munkára van szüksége...</p>
+
+    <div class="hero-actions">
+      <a href="tel:+36709539785" class="btn btn-primary">📞 Hívás</a>
+      <a href="#uzenet" class="btn btn-outline">📝 Üzenet</a>
+    </div>
+  </div>
+</section>
+{{ end }}
+
 <div class="container">
   <div class="row justify-content-center">
     <div class="col-12 col-md-9">
-      <h1>{{ .Title }}</h1>
 
       {{ if .Date }}
         <p class="meta">

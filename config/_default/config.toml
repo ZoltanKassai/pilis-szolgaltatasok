@@ -3,6 +3,10 @@ languageCode = "hu-hu"
 title = "Pilis környéki szolgáltatások"
 theme = "hero"
 enableRobotsTXT = true
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 
 [params]
 description = "Kültéri és beltéri kivitelezési munkák Piliscsabán és környékén."

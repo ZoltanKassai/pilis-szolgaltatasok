@@ -3,15 +3,9 @@ title: "Kapcsolat – ajánlatkérés egyszerűen"
 description: "Vegye fel velem a kapcsolatot – kültéri és beltéri munkák Piliscsabán és környékén. Gyors válasz, korrekt hozzáállás."
 ---
 
-## Kapcsolat – ajánlatkérés egyszerűen
+## Nem call center – velem beszél
 
-Ha kültéri vagy beltéri munkára van szüksége **Piliscsabán vagy a környéken**, vegye fel velem a kapcsolatot bizalommal.
-
-Nem call center, nem közvetítő: **közvetlenül velem beszél**.
-
----
-
-## 📞 Telefonos egyeztetés – a leggyorsabb
+<h2 class="scroll-anchor">📞 Telefonos egyeztetés – a leggyorsabb</h2>
 
 Ha gyors válaszra van szüksége, hívjon nyugodtan:
 
@@ -24,7 +18,7 @@ Rövid egyeztetés után meg tudom mondani:
 
 ---
 
-## 📝 Írjon üzenetet – ajánlatkérés 1 perc alatt
+## 📝 Írjon üzenetet – ajánlatkérés 1 perc alatt {#uzenet}
 
 {{< contact-form >}}
 
@@ -38,21 +32,27 @@ Rövid egyeztetés után meg tudom mondani:
 
 Ha inkább emailt írna:
 
-**📧 zoltankassai8 [kukac] gmail [pont] com**
+**📧 {{< obfuscated-email >}}**
 
 ---
 
-## Rólam – miért dolgozom máshogy?
+{{< about
+  image="/images/hero/en.jpeg"
+  alt="Kassai Zoltán – Piliscsaba"
+  title="Rólam – miért dolgozom máshogy?"
+>}}
 
 Nem csak dolgozni járok **Piliscsabára** – itt élek.  
 Ezért számomra a minőségi munka nem marketing szöveg, hanem alapelv.
 
 Amit elvállalok:
 - azt rendesen megcsinálom
-- nem sietem el
+- nem csapom össze
 - nem hagyok félkész megoldásokat
 
-Nem ígérek csodát – **csak normális munkát**.
+**Nem ígérek csodát – csak normális munkát.**
+
+{{< /about >}}
 
 ---
 
